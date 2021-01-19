@@ -44,6 +44,7 @@ parser.add_argument('--use_wandb', type=str2bool, default=True)
 parser.add_argument('--iters_per_eval', type=int, default=1)
 parser.add_argument('--batch_size_train', type=int, default=128)
 parser.add_argument('--batch_size_eval', type=int, default=256)
+parser.add_argument('--n_digit', type=int, default=2)
 flags = parser.parse_args()
 
 class AdditionDataset(Dataset):
@@ -109,9 +110,9 @@ class AdditionDataset(Dataset):
 if __name__ == '__main__':
 
     # create a dataset for e.g. 2-digit addition
-    ndigit = 2
-    train_dataset = AdditionDataset(ndigit=ndigit, split='train')
-    test_dataset = AdditionDataset(ndigit=ndigit, split='test')
+    n_digit = flags.n_digit
+    train_dataset = AdditionDataset(ndigit=n_digit, split='train')
+    test_dataset = AdditionDataset(ndigit=n_digit, split='test')
 
     #import pdb; pdb.set_trace()
 
