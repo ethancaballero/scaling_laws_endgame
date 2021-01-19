@@ -110,9 +110,9 @@ class AdditionDataset(Dataset):
 if __name__ == '__main__':
 
     # create a dataset for e.g. 2-digit addition
-    n_digit = flags.n_digit
-    train_dataset = AdditionDataset(ndigit=n_digit, split='train')
-    test_dataset = AdditionDataset(ndigit=n_digit, split='test')
+    ndigit = flags.n_digit
+    train_dataset = AdditionDataset(ndigit=ndigit, split='train')
+    test_dataset = AdditionDataset(ndigit=ndigit, split='test')
 
     #import pdb; pdb.set_trace()
 
