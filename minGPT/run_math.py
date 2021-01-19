@@ -120,7 +120,7 @@ if __name__ == '__main__':
     dmodel = flags.dmodel
     dff_div_dmodel = flags.dff_div_dmodel #4
     dmodel_div_nlayer = flags.dmodel_div_nlayer #90
-    n_head = max(2, dmodel/64)
+    n_head = max(2, dmodel // 64)
 
     dff = int(dmodel * dff_div_dmodel)
     n_layer = dmodel // dmodel_div_nlayer
