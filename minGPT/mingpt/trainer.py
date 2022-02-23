@@ -54,7 +54,8 @@ class Trainer:
         self.device = 'cpu'
         if torch.cuda.is_available():
             self.device = torch.cuda.current_device()
-            self.model = torch.nn.DataParallel(self.model).to(self.device)
+            #self.model = torch.nn.DataParallel(self.model).to(self.device)
+            self.model = self.model.to(self.device)
 
         self.loader_train = DataLoader(self.train_dataset, shuffle=True, pin_memory=True,
                         batch_size=flags.batch_size_train,

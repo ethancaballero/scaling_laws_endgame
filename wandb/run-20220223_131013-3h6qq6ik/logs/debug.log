@@ -1,0 +1,25 @@
+2022-02-23 13:10:13,116 INFO    MainThread:13434 [wandb_init.py:_log_setup():293] Logging user logs to wandb/run-20220223_131013-3h6qq6ik/logs/debug.log
+2022-02-23 13:10:13,116 INFO    MainThread:13434 [wandb_init.py:_log_setup():294] Logging internal logs to wandb/run-20220223_131013-3h6qq6ik/logs/debug-internal.log
+2022-02-23 13:10:13,116 INFO    MainThread:13434 [wandb_setup.py:_flush():69] setting env: {}
+2022-02-23 13:10:13,116 INFO    MainThread:13434 [wandb_setup.py:_flush():69] setting user settings: {'email': 'thanecaballero7@gmail.com'}
+2022-02-23 13:10:13,116 INFO    MainThread:13434 [wandb_setup.py:_flush():69] multiprocessing start_methods=fork,spawn,forkserver
+2022-02-23 13:10:14,555 WARNING MainThread:13434 [wandb_init.py:init():492] interrupted
+Traceback (most recent call last):
+  File "/Users/ethancaballero/libraries/miniconda/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 472, in init
+    run = wi.init()
+  File "/Users/ethancaballero/libraries/miniconda/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 378, in init
+    ret = backend.interface.communicate_run(run, timeout=30)
+  File "/Users/ethancaballero/libraries/miniconda/lib/python3.8/site-packages/wandb/interface/interface.py", line 533, in communicate_run
+    return self._communicate_run(run, timeout=timeout)
+  File "/Users/ethancaballero/libraries/miniconda/lib/python3.8/site-packages/wandb/interface/interface.py", line 524, in _communicate_run
+    resp = self._communicate(req, timeout=timeout)
+  File "/Users/ethancaballero/libraries/miniconda/lib/python3.8/site-packages/wandb/interface/interface.py", line 437, in _communicate
+    return future.get(timeout)
+  File "/Users/ethancaballero/libraries/miniconda/lib/python3.8/site-packages/wandb/interface/interface.py", line 58, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/Users/ethancaballero/libraries/miniconda/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Users/ethancaballero/libraries/miniconda/lib/python3.8/threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2022-02-23 13:10:14,566 INFO    MainThread:13434 [internal.py:handle_exit():137] Internal process exited
