@@ -16,6 +16,8 @@ from torch.utils.data.dataloader import DataLoader
 
 import wandb
 
+from mingpt.utils import sample
+
 logger = logging.getLogger(__name__)
 
 class TrainerConfig:
@@ -61,6 +63,40 @@ class Trainer:
         self.loader_test = DataLoader(self.test_dataset, shuffle=False, pin_memory=True,
                                 batch_size=flags.batch_size_eval,
                                 num_workers=config.num_workers)
+
+    def give_exam(self, dataset, batch_size=32, max_batches=-1):
+        
+        results = []
+        loader = DataLoader(dataset, batch_size=batch_size)
+        for b, (x, y) in enumerate(loader):
+            #x = x.to(trainer.device)
+            x = x.to(self.device)
+            d1d2 = x[:, :self.flags.n_digit*2]
+            d1d2d3 = sample(self.model, d1d2, self.flags.n_digit+1)
+            d3 = d1d2d3[:, -(self.flags.n_digit+1):]
+            #factors = torch.tensor([[10**i for i in range(self.flags.n_digit+1)][::-1]]).to(trainer.device)
+            factors = torch.tensor([[10**i for i in range(self.flags.n_digit+1)][::-1]]).to(self.device)
+            # decode the integers from individual digits
+            d1i = (d1d2[:,:self.flags.n_digit] * factors[:,1:]).sum(1)
+            d2i = (d1d2[:,self.flags.n_digit:self.flags.n_digit*2] * factors[:,1:]).sum(1)
+            d3i_pred = (d3 * factors).sum(1)
+            d3i_gt = d1i + d2i
+            correct = (d3i_pred == d3i_gt).cpu() # Software 1.0 vs. Software 2.0 fight RIGHT on this line, lol
+            for i in range(x.size(0)):
+                results.append(int(correct[i]))
+                judge = 'YEP!!!' if correct[i] else 'NOPE'
+                """
+                if not correct[i]:
+                    print("GPT claims that %03d + %03d = %03d (gt is %03d; %s)" 
+                        % (d1i[i], d2i[i], d3i_pred[i], d3i_gt[i], judge))
+                #"""
+            
+            if max_batches >= 0 and b+1 >= max_batches:
+                break
+
+        print("final score: %d/%d = %.2f%% correct" % (np.sum(results), len(results), 100*np.mean(results)))
+
+        return 100*np.mean(results)
 
     def save_checkpoint(self):
         # DataParallel wrappers keep raw model object in .module attribute
@@ -138,10 +174,14 @@ class Trainer:
 
             if not is_train:
                 test_loss = float(np.mean(losses))
+
+                test_accuracy = self.give_exam(self.test_dataset, batch_size=self.flags.batch_size_eval, max_batches=-1)
+
                 logger.info("test loss: %f", test_loss)
 
                 log_dict = {}
                 log_dict.update({'eval_loss': test_loss,
+                                 'eval_accuracy': test_accuracy,
                                 })
                 # makes wandb steps equal to number of samples trained on
                 wandb.log(log_dict, step=self.train_it*self.flags.batch_size_train)

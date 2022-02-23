@@ -8,8 +8,8 @@ logging.basicConfig(
 
 # make deterministic
 from mingpt.utils import set_seed
-set_seed(42)
 
+import random
 import numpy as np
 import torch
 import torch.nn as nn
@@ -27,6 +27,7 @@ import wandb
 
 import os
 #os.environ["WANDB_SILENT"] = "True"
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 def str2bool(v):
   return v.lower() in ("yes", "true", "t", "1")
@@ -38,13 +39,17 @@ parser.add_argument('--dmodel', type=int, default=128) #[128, 256]
 parser.add_argument('--dff_div_dmodel', type=int, default=4) # .25 to 4 #[.25, .5, 1, 2, 4]
 parser.add_argument('--dmodel_div_nlayer', type=int, default=90) # 4 to 100 #[2, 4, 8, 16, 32, 64, 128]
 parser.add_argument('--epochs', type=int, default=1)
-parser.add_argument('--wandb_tag', type=str, default="scaling_laws_endgame")
-parser.add_argument('--wandb_project', type=str, default="scaling_laws_endgame")
+parser.add_argument('--wandb_tag', type=str, default="math")
+parser.add_argument('--wandb_project', type=str, default="math")
 parser.add_argument('--use_wandb', type=str2bool, default=True)
 parser.add_argument('--iters_per_eval', type=int, default=1)
 parser.add_argument('--batch_size_train', type=int, default=128)
 parser.add_argument('--batch_size_eval', type=int, default=256)
+parser.add_argument('--train_set_size', type=int, default=1000000000000)
+parser.add_argument('--test_set_size', type=int, default=1000000000000)
 parser.add_argument('--n_digit', type=int, default=2)
+parser.add_argument('--seed', type=int, default=1)
+parser.add_argument('--arithmetic_split_seed', type=int, default=1)
 flags = parser.parse_args()
 
 class AdditionDataset(Dataset):
@@ -75,7 +80,7 @@ class AdditionDataset(Dataset):
     fun exercise: does it help if the result is asked to be produced in reverse order?
     """
 
-    def __init__(self, ndigit, split):
+    def __init__(self, flags, ndigit, split):
         self.split = split # train/test
         self.ndigit = ndigit
         self.vocab_size = 10 # 10 possible digits 0..9
@@ -84,10 +89,26 @@ class AdditionDataset(Dataset):
         
         # split up all addition problems into either training data or test data
         num = (10**self.ndigit)**2 # total number of possible combinations
-        r = np.random.RandomState(1337) # make deterministic
+        #r = np.random.RandomState(seed) # make deterministic
+        r = np.random.RandomState(flags.arithmetic_split_seed) # make deterministic
         perm = r.permutation(num)
         num_test = min(int(num*0.2), 1000) # 20% of the whole dataset, or only up to 1000
         self.ixes = perm[:num_test] if split == 'test' else perm[num_test:]
+
+        #import pdb; pdb.set_trace()
+
+        if split == 'train':
+            set_seed(flags.seed+100000001)
+            random.shuffle(self.ixes)
+            self.ixes = self.ixes[:flags.train_set_size]
+        elif split == 'test':
+            #set_seed(flags.seed+200000001)
+            #random.shuffle(self.ixes)
+            self.ixes = self.ixes[:flags.test_set_size]
+        else:
+            error
+
+        #import pdb; pdb.set_trace()
 
     def __len__(self):
         return self.ixes.size
@@ -109,10 +130,14 @@ class AdditionDataset(Dataset):
 
 if __name__ == '__main__':
 
+    set_seed(flags.seed)
+
     # create a dataset for e.g. 2-digit addition
     ndigit = flags.n_digit
-    train_dataset = AdditionDataset(ndigit=ndigit, split='train')
-    test_dataset = AdditionDataset(ndigit=ndigit, split='test')
+    train_dataset = AdditionDataset(flags, ndigit=ndigit, split='train')
+    test_dataset = AdditionDataset(flags, ndigit=ndigit, split='test')
+
+    set_seed(flags.seed)
 
     #import pdb; pdb.set_trace()
 
@@ -178,14 +203,18 @@ if __name__ == '__main__':
             for i in range(x.size(0)):
                 results.append(int(correct[i]))
                 judge = 'YEP!!!' if correct[i] else 'NOPE'
+                """
                 if not correct[i]:
                     print("GPT claims that %03d + %03d = %03d (gt is %03d; %s)" 
                         % (d1i[i], d2i[i], d3i_pred[i], d3i_gt[i], judge))
+                #"""
             
             if max_batches >= 0 and b+1 >= max_batches:
                 break
 
         print("final score: %d/%d = %.2f%% correct" % (np.sum(results), len(results), 100*np.mean(results)))
+
+        return 100*np.mean(results)
 
     # training set: how well did we memorize?
     give_exam(train_dataset, batch_size=1024, max_batches=10)
