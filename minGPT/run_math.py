@@ -39,6 +39,7 @@ parser.add_argument('--dmodel', type=int, default=128) #[128, 256]
 parser.add_argument('--dff_div_dmodel', type=int, default=4) # .25 to 4 #[.25, .5, 1, 2, 4]
 parser.add_argument('--dmodel_div_nlayer', type=int, default=90) # 4 to 100 #[2, 4, 8, 16, 32, 64, 128]
 parser.add_argument('--epochs', type=int, default=1)
+parser.add_argument('--data_steps', type=int, default=600000)
 parser.add_argument('--wandb_tag', type=str, default="math")
 parser.add_argument('--wandb_project', type=str, default="math")
 parser.add_argument('--use_wandb', type=str2bool, default=True)
@@ -50,6 +51,8 @@ parser.add_argument('--test_set_size', type=int, default=1000000000000)
 parser.add_argument('--n_digit', type=int, default=2)
 parser.add_argument('--seed', type=int, default=1)
 parser.add_argument('--arithmetic_split_seed', type=int, default=1)
+parser.add_argument('--lr', type=float, default=.0006)
+parser.add_argument('--lr_decay', type=str2bool, default=True)
 flags = parser.parse_args()
 
 class AdditionDataset(Dataset):
@@ -176,8 +179,8 @@ if __name__ == '__main__':
     model = GPT(mconf)
 
     # initialize a trainer instance and kick off training
-    tconf = TrainerConfig(max_epochs=flags.epochs, batch_size=512, learning_rate=6e-4,
-                        lr_decay=True, warmup_tokens=1024, final_tokens=50*len(train_dataset)*(ndigit+1),
+    tconf = TrainerConfig(max_epochs=flags.epochs, batch_size=512, learning_rate=flags.lr,
+                        lr_decay=flags.lr_decay, warmup_tokens=1024, final_tokens=50*len(train_dataset)*(ndigit+1),
                         num_workers=4)
     trainer = Trainer(model, train_dataset, test_dataset, tconf, flags)
     trainer.train()

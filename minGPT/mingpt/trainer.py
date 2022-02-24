@@ -173,7 +173,13 @@ class Trainer:
                     # report progress
                     pbar.set_description(f"epoch {epoch+1} iter {it}: train loss {loss.item():.5f}. lr {lr:e}")
 
-            if not is_train:
+                    if self.train_it >= self.flags.data_steps:
+                        break
+
+            if is_train:
+                return self.train_it
+
+            elif not is_train:
                 test_loss = float(np.mean(losses))
 
                 test_accuracy = self.give_exam(self.test_dataset, batch_size=self.flags.batch_size_eval, max_batches=-1)
@@ -187,12 +193,16 @@ class Trainer:
                 # makes wandb steps equal to number of samples trained on
                 wandb.log(log_dict, step=self.train_it*self.flags.batch_size_train)
                 return test_loss
+            
+            else:
+                error
 
         best_loss = float('inf')
         self.tokens = 0 # counter used for learning rate decay
+        iters = 0
         for epoch in range(config.max_epochs):
 
-            run_epoch('train')
+            iters = run_epoch('train')
             if self.test_dataset is not None:
                 test_loss = run_epoch('test')
 
@@ -201,3 +211,8 @@ class Trainer:
             if self.config.ckpt_path is not None and good_model:
                 best_loss = test_loss
                 self.save_checkpoint()
+
+            print("data_steps: ", iters * self.flags.batch_size_train)
+            print("self.flags.data_steps: ", self.flags.data_steps)
+            if (iters * self.flags.batch_size_train) >= self.flags.data_steps:
+                break
