@@ -152,7 +152,8 @@ if __name__ == '__main__':
     n_head = max(2, dmodel // 64)
 
     dff = int(dmodel * dff_div_dmodel)
-    n_layer = dmodel // dmodel_div_nlayer
+    #n_layer = dmodel // dmodel_div_nlayer
+    n_layer = 1
     
     print("d_model:", dmodel, "; n_head:", n_head, "; dff:", dff, "; n_layer: ", n_layer)
     #print()

@@ -112,7 +112,7 @@ class Trainer:
 
         wandb.init(project=self.flags.wandb_project, reinit=True, tags=[self.flags.wandb_tag])
         wandb.config.update(self.flags)
-        wandb.config.update({"params": sum(p.numel() for p in self.model.parameters())})
+        wandb.config.update({"params": sum(p.numel() for p in self.model.parameters()), "embedding params": self.train_dataset.vocab_size * self.flags.dmodel})
 
         def run_epoch(split):
             is_train = split == 'train'
