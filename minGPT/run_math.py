@@ -53,6 +53,7 @@ parser.add_argument('--seed', type=int, default=1)
 parser.add_argument('--arithmetic_split_seed', type=int, default=1)
 parser.add_argument('--lr', type=float, default=.0006)
 parser.add_argument('--lr_decay', type=str2bool, default=True)
+parser.add_argument('--weight_decay', type=float, default=.1)
 parser.add_argument('--drop_last', type=str2bool, default=False)
 flags = parser.parse_args()
 
@@ -183,7 +184,7 @@ if __name__ == '__main__':
     # initialize a trainer instance and kick off training
     tconf = TrainerConfig(max_epochs=flags.epochs, batch_size=512, learning_rate=flags.lr,
                         lr_decay=flags.lr_decay, warmup_tokens=1024, final_tokens=50*len(train_dataset)*(ndigit+1),
-                        num_workers=4)
+                        weight_decay=flags.weight_decay, num_workers=4)
     trainer = Trainer(model, train_dataset, test_dataset, tconf, flags)
     trainer.train()
 
