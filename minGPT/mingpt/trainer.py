@@ -59,7 +59,8 @@ class Trainer:
 
         self.loader_train = DataLoader(self.train_dataset, shuffle=True, pin_memory=True,
                         batch_size=flags.batch_size_train,
-                        num_workers=config.num_workers)
+                        num_workers=config.num_workers,
+                        drop_last=self.flags.drop_last)
 
         self.loader_test = DataLoader(self.test_dataset, shuffle=False, pin_memory=True,
                                 batch_size=flags.batch_size_eval,

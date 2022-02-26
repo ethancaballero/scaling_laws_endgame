@@ -53,6 +53,7 @@ parser.add_argument('--seed', type=int, default=1)
 parser.add_argument('--arithmetic_split_seed', type=int, default=1)
 parser.add_argument('--lr', type=float, default=.0006)
 parser.add_argument('--lr_decay', type=str2bool, default=True)
+parser.add_argument('--drop_last', type=str2bool, default=False)
 flags = parser.parse_args()
 
 class AdditionDataset(Dataset):
