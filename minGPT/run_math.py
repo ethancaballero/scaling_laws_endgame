@@ -184,9 +184,9 @@ if __name__ == '__main__':
                     #n_layer=n_layer, n_head=n_head, n_embd=n_embd)
     model = GPT(mconf)
 
-    if self.constant_final_tokens:
+    if flags.constant_final_tokens:
         ft_len_dataset = train_dataset.num_train_orig
-    elif not self.constant_final_tokens:
+    elif not flags.constant_final_tokens:
         ft_len_dataset = len(train_dataset)
     else:
         error
