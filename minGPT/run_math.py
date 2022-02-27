@@ -55,6 +55,8 @@ parser.add_argument('--lr', type=float, default=.0006)
 parser.add_argument('--lr_decay', type=str2bool, default=True)
 parser.add_argument('--weight_decay', type=float, default=.1)
 parser.add_argument('--drop_last', type=str2bool, default=False)
+parser.add_argument('--constant_final_tokens', type=str2bool, default=True)
+parser.add_argument('--final_tokens_multiplier', type=int, default=50)
 flags = parser.parse_args()
 
 class AdditionDataset(Dataset):
@@ -98,6 +100,7 @@ class AdditionDataset(Dataset):
         r = np.random.RandomState(flags.arithmetic_split_seed) # make deterministic
         perm = r.permutation(num)
         num_test = min(int(num*0.2), 1000) # 20% of the whole dataset, or only up to 1000
+        self.num_train_orig = num - num_test
         self.ixes = perm[:num_test] if split == 'test' else perm[num_test:]
 
         #import pdb; pdb.set_trace()
@@ -181,9 +184,16 @@ if __name__ == '__main__':
                     #n_layer=n_layer, n_head=n_head, n_embd=n_embd)
     model = GPT(mconf)
 
+    if self.constant_final_tokens:
+        ft_len_dataset = train_dataset.num_train_orig
+    elif not self.constant_final_tokens:
+        ft_len_dataset = len(train_dataset)
+    else:
+        error
+
     # initialize a trainer instance and kick off training
     tconf = TrainerConfig(max_epochs=flags.epochs, batch_size=512, learning_rate=flags.lr,
-                        lr_decay=flags.lr_decay, warmup_tokens=1024, final_tokens=50*len(train_dataset)*(ndigit+1),
+                        lr_decay=flags.lr_decay, warmup_tokens=1024, final_tokens=flags.final_tokens_multiplier*ft_len_dataset*(ndigit+1),
                         weight_decay=flags.weight_decay, num_workers=4)
     trainer = Trainer(model, train_dataset, test_dataset, tconf, flags)
     trainer.train()
