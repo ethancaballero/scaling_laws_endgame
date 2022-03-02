@@ -22,7 +22,8 @@ class GPTConfig:
     resid_pdrop = 0.1
     attn_pdrop = 0.1
 
-    def __init__(self, vocab_size, block_size, **kwargs):
+    def __init__(self, flags, vocab_size, block_size, **kwargs):
+        self.flags = flags
         self.vocab_size = vocab_size
         self.block_size = block_size
         for k,v in kwargs.items():
@@ -84,9 +85,12 @@ class Block(nn.Module):
 
     def __init__(self, config):
         super().__init__()
-        self.ln1 = nn.LayerNorm(config.n_embd)
+        self.config = config
+        if not self.config.flags.only_mlp:
+            self.ln1 = nn.LayerNorm(config.n_embd)
         self.ln2 = nn.LayerNorm(config.n_embd)
-        self.attn = CausalSelfAttention(config)
+        if not self.config.flags.only_mlp:
+            self.attn = CausalSelfAttention(config)
         self.mlp = nn.Sequential(
             nn.Linear(config.n_embd, config.n_ff),
             nn.GELU(),
@@ -95,7 +99,8 @@ class Block(nn.Module):
         )
 
     def forward(self, x):
-        x = x + self.attn(self.ln1(x))
+        if not self.config.flags.only_mlp:
+            x = x + self.attn(self.ln1(x))
         x = x + self.mlp(self.ln2(x))
         return x
 
@@ -104,6 +109,8 @@ class GPT(nn.Module):
 
     def __init__(self, config):
         super().__init__()
+
+        self.config = config
 
         # input embedding stem
         self.tok_emb = nn.Embedding(config.vocab_size, config.n_embd)

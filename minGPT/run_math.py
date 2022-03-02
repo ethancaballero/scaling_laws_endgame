@@ -57,6 +57,7 @@ parser.add_argument('--weight_decay', type=float, default=.1)
 parser.add_argument('--drop_last', type=str2bool, default=False)
 parser.add_argument('--constant_final_tokens', type=str2bool, default=True)
 parser.add_argument('--final_tokens_multiplier', type=int, default=50)
+parser.add_argument('--only_mlp', type=str2bool, default=False)
 flags = parser.parse_args()
 
 class AdditionDataset(Dataset):
@@ -154,7 +155,8 @@ if __name__ == '__main__':
     dmodel = flags.dmodel
     dff_div_dmodel = flags.dff_div_dmodel #4
     dmodel_div_nlayer = flags.dmodel_div_nlayer #90
-    n_head = max(2, dmodel // 64)
+    #n_head = max(2, dmodel // 64)
+    n_head = 1
 
     dff = int(dmodel * dff_div_dmodel)
     #n_layer = dmodel // dmodel_div_nlayer
@@ -179,7 +181,7 @@ if __name__ == '__main__':
     print("12*n_layer*n_embd: ")
 
     # initialize a baby GPT model
-    mconf = GPTConfig(train_dataset.vocab_size, train_dataset.block_size, 
+    mconf = GPTConfig(flags, train_dataset.vocab_size, train_dataset.block_size, 
                     n_layer=n_layer, n_head=n_head, n_embd=dmodel, n_ff=dff)
                     #n_layer=n_layer, n_head=n_head, n_embd=n_embd)
     model = GPT(mconf)
