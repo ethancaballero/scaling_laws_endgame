@@ -58,6 +58,7 @@ parser.add_argument('--drop_last', type=str2bool, default=False)
 parser.add_argument('--constant_final_tokens', type=str2bool, default=True)
 parser.add_argument('--final_tokens_multiplier', type=int, default=50)
 parser.add_argument('--only_mlp', type=str2bool, default=False)
+parser.add_argument('--n_head', type=int, default=2)
 flags = parser.parse_args()
 
 class AdditionDataset(Dataset):
@@ -156,7 +157,8 @@ if __name__ == '__main__':
     dff_div_dmodel = flags.dff_div_dmodel #4
     dmodel_div_nlayer = flags.dmodel_div_nlayer #90
     #n_head = max(2, dmodel // 64)
-    n_head = 1
+    #n_head = 1
+    n_head = flags.n_head
 
     dff = int(dmodel * dff_div_dmodel)
     #n_layer = dmodel // dmodel_div_nlayer
