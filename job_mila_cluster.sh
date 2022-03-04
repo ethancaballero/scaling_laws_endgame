@@ -28,7 +28,7 @@ case $i in
     shift # past argument=value
     ;;
     -dm=*|--dmodel=*)
-    iters_per_eval="${i#*=}"
+    dmodel="${i#*=}"
     shift # past argument=value
     ;;
     -tss=*|--train_set_size=*)
