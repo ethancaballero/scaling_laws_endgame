@@ -15,6 +15,8 @@ lr=".001"
 
 wandb_tag="math__p_axis__dff_div_dmodel_1__n_head_1__n_digits_4"
 
+seed="1"
+
 user=$USER
 echo "$user"
 
@@ -35,6 +37,10 @@ case $i in
     ;;
     -nd=*|--n_digit=*)
     n_digit="${i#*=}"
+    shift # past argument=value
+    ;;
+    -sd=*|--seed=*)
+    seed="${i#*=}"
     shift # past argument=value
     ;;
     -wt=*|--wandb_tag=*)
@@ -69,4 +75,4 @@ source env/bin/activate
 
 cd research/scaling_outer/scaling_laws_endgame
 
-python minGPT/run_math.py --epochs 1000000000000000000 --data_steps 10000000000000000 --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp False --dmodel $dmodel --train_set_size $train_set_size --dff_div_dmodel 1 --n_head 1 --n_digit $n_digit
+python minGPT/run_math.py --epochs 1000000000000000000 --data_steps 10000000000000000 --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp False --dmodel $dmodel --train_set_size $train_set_size --dff_div_dmodel 1 --n_head 1 --n_digit $n_digit --seed $seed
