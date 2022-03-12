@@ -1,340 +1,340 @@
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=1016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=2016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=3016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=4016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=5016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=6016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=7016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=8016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=9016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=10016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=11016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=12016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=13016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=14016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=15016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=16016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=17016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=18016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=19016 --train_set_size=16 --wandb_tag=math__d_axis
 
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20001 --train_set_size=256 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20002 --train_set_size=240 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20003 --train_set_size=224 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20004 --train_set_size=208 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20005 --train_set_size=192 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20006 --train_set_size=176 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20007 --train_set_size=160 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20008 --train_set_size=144 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20009 --train_set_size=128 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20010 --train_set_size=112 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20011 --train_set_size=96 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20012 --train_set_size=80 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20013 --train_set_size=64 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20014 --train_set_size=48 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20015 --train_set_size=32 --wandb_tag=math__d_axis
-sbatch --time=1:0:0 --gres=gpu:1 job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20016 --train_set_size=16 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20001 --train_set_size=256 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20002 --train_set_size=240 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20003 --train_set_size=224 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20004 --train_set_size=208 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20005 --train_set_size=192 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20006 --train_set_size=176 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20007 --train_set_size=160 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20008 --train_set_size=144 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20009 --train_set_size=128 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20010 --train_set_size=112 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20011 --train_set_size=96 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20012 --train_set_size=80 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20013 --train_set_size=64 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20014 --train_set_size=48 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20015 --train_set_size=32 --wandb_tag=math__d_axis
+sbatch --time=0:20:0 --gres=gpu:1 --partition=unkillable job_mila_cluster.sh --data_steps=30000 --batch_size_train=16 --seed=20016 --train_set_size=16 --wandb_tag=math__d_axis
