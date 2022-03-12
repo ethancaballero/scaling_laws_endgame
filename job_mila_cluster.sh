@@ -48,8 +48,8 @@ case $i in
     train_set_size="${i#*=}"
     shift # past argument=value
     ;;
-    -tss=*|--train_set_size=*)
-    train_set_size="${i#*=}"
+    -ds=*|--data_steps=*)
+    data_steps="${i#*=}"
     shift # past argument=value
     ;;
     -nd=*|--n_digit=*)
