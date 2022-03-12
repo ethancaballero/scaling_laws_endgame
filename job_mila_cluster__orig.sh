@@ -5,8 +5,6 @@
 #SBATCH --time=48:00:00                        # The job will run for 3 hours
 
 dmodel="128"
-n_head="2"
-dff_div_dmodel="4"
 #iters_per_eval="1024"
 #iters_per_eval="2048"
 train_set_size="1000000000000"
@@ -15,12 +13,9 @@ n_digit="2"
 
 lr=".001"
 
-#wandb_tag="math__p_axis__dff_div_dmodel_1__n_head_1__n_digits_4"
-wandb_tag="math__d_axis__seeds_2"
+wandb_tag="math__p_axis__dff_div_dmodel_1__n_head_1__n_digits_4"
 
 seed="1"
-
-data_steps="10000000000000000"
 
 user=$USER
 echo "$user"
@@ -34,18 +29,6 @@ case $i in
     ;;
     -dm=*|--dmodel=*)
     dmodel="${i#*=}"
-    shift # past argument=value
-    ;;
-    -nh=*|--n_head=*)
-    n_head="${i#*=}"
-    shift # past argument=value
-    ;;
-    -ddd=*|--dff_div_dmodel=*)
-    dff_div_dmodel="${i#*=}"
-    shift # past argument=value
-    ;;
-    -tss=*|--train_set_size=*)
-    train_set_size="${i#*=}"
     shift # past argument=value
     ;;
     -tss=*|--train_set_size=*)
@@ -92,4 +75,4 @@ source env/bin/activate
 
 cd research/scaling_outer/scaling_laws_endgame
 
-python minGPT/run_math.py --epochs 1000000000000000000 --data_steps $data_steps --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp False --dmodel $dmodel --train_set_size $train_set_size --dff_div_dmodel $dff_div_dmodel --n_head $n_head --n_digit $n_digit --seed $seed
+python minGPT/run_math.py --epochs 1000000000000000000 --data_steps 10000000000000000 --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp False --dmodel $dmodel --train_set_size $train_set_size --dff_div_dmodel 1 --n_head 1 --n_digit $n_digit --seed $seed
