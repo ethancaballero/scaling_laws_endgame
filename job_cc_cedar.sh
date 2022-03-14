@@ -7,6 +7,7 @@
 
 dmodel="128"
 n_head="2"
+n_layer="1"
 dff_div_dmodel="4"
 #iters_per_eval="1024"
 #iters_per_eval="2048"
@@ -39,6 +40,10 @@ case $i in
     ;;
     -nh=*|--n_head=*)
     n_head="${i#*=}"
+    shift # past argument=value
+    ;;
+    -nl=*|--n_layer=*)
+    n_layer="${i#*=}"
     shift # past argument=value
     ;;
     -ddd=*|--dff_div_dmodel=*)
@@ -99,4 +104,4 @@ source env/bin/activate
 
 cd /home/ethancab/research/scaling_laws_endgame
 
-python minGPT/run_math.py --epochs 1000000000000000000 --data_steps $data_steps --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp False --dmodel $dmodel --batch_size_train $batch_size_train --train_set_size $train_set_size --dff_div_dmodel $dff_div_dmodel --n_head $n_head --n_digit $n_digit --seed $seed
+python minGPT/run_math.py --epochs 1000000000000000000 --data_steps $data_steps --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp False --dmodel $dmodel --batch_size_train $batch_size_train --train_set_size $train_set_size --dff_div_dmodel $dff_div_dmodel --n_head $n_head --n_layer $n_layer --n_digit $n_digit --seed $seed
