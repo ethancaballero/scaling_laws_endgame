@@ -1,0 +1,22 @@
+
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=1 --train_set_size=128 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=2 --train_set_size=256 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=3 --train_set_size=512 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=4 --train_set_size=1024 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=5 --train_set_size=2048 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=6 --train_set_size=4096 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=7 --train_set_size=8192 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=8 --train_set_size=16384 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=9 --train_set_size=32768 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=10 --train_set_size=65536 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=11 --train_set_size=131072 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=12 --train_set_size=262144 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=13 --train_set_size=524288 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=14 --train_set_size=1048576 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=15 --train_set_size=2097152 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=16 --train_set_size=4194304 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=17 --train_set_size=8388608 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=18 --train_set_size=16777216 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=19 --train_set_size=33554432 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=20 --train_set_size=67108864 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
+sbatch --time=0:40:0 --gres=gpu:1 job_cc_cedar.sh --data_steps=99999999999999 --seed=22 --train_set_size=134217728 --batch_size_train=128  --lr=.0001 --wandb_tag=math__d_axis__digits4
