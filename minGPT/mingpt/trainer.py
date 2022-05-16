@@ -111,7 +111,8 @@ class Trainer:
         raw_model = model.module if hasattr(self.model, "module") else model
         optimizer = raw_model.configure_optimizers(config)
 
-        wandb.init(project=self.flags.wandb_project, reinit=True, tags=[self.flags.wandb_tag])
+        #wandb.init(project=self.flags.wandb_project, reinit=True, tags=[self.flags.wandb_tag])
+        wandb.init(settings=wandb.Settings(start_method="fork"), project=self.flags.wandb_project, reinit=True, tags=[self.flags.wandb_tag])
         wandb.config.update(self.flags)
         wandb.config.update({"params": sum(p.numel() for p in self.model.parameters()), "embedding params": self.train_dataset.vocab_size * self.flags.dmodel})
 
