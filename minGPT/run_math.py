@@ -58,6 +58,8 @@ parser.add_argument('--drop_last', type=str2bool, default=False)
 parser.add_argument('--constant_final_tokens', type=str2bool, default=True)
 parser.add_argument('--final_tokens_multiplier', type=int, default=50)
 parser.add_argument('--only_mlp', type=str2bool, default=False)
+parser.add_argument('--new_perm', type=str2bool, default=True)
+parser.add_argument('--max_dataset_size', type=int, default=200000000)
 parser.add_argument('--n_head', type=int, default=2)
 parser.add_argument('--n_layer', type=int, default=1)
 flags = parser.parse_args()
@@ -101,7 +103,12 @@ class AdditionDataset(Dataset):
         num = (10**self.ndigit)**2 # total number of possible combinations
         #r = np.random.RandomState(seed) # make deterministic
         r = np.random.RandomState(flags.arithmetic_split_seed) # make deterministic
-        perm = r.permutation(num)
+        if flags.new_perm:
+            random.seed(flags.arithmetic_split_seed)
+            _num = min(num, flags.max_dataset_size)
+            perm = np.array(random.sample(range(num), _num), dtype=np.int64)
+        else:
+            perm = r.permutation(num)
         num_test = min(int(num*0.2), 1000) # 20% of the whole dataset, or only up to 1000
         self.num_train_orig = num - num_test
         self.ixes = perm[:num_test] if split == 'test' else perm[num_test:]
