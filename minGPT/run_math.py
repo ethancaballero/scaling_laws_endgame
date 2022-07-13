@@ -47,7 +47,7 @@ parser.add_argument('--iters_per_eval', type=int, default=1)
 parser.add_argument('--batch_size_train', type=int, default=128)
 parser.add_argument('--batch_size_eval', type=int, default=1000)
 parser.add_argument('--train_set_size', type=int, default=1000000000000)
-parser.add_argument('--test_set_size', type=int, default=1000000000000)
+parser.add_argument('--test_set_size', type=int, default=1000)
 parser.add_argument('--n_digit', type=int, default=2)
 parser.add_argument('--seed', type=int, default=1)
 parser.add_argument('--arithmetic_split_seed', type=int, default=1)
@@ -110,7 +110,7 @@ class AdditionDataset(Dataset):
             perm = np.array(random.sample(range(num), _num), dtype=np.int64)
         else:
             perm = r.permutation(num)
-        num_test = min(int(num*0.2), 1000) # 20% of the whole dataset, or only up to 1000
+        num_test = min(int(num*0.2), 10000) # 20% of the whole dataset, or only up to 10000
         self.num_train_orig = num - num_test
         self.ixes = perm[:num_test] if split == 'test' else perm[num_test:]
 

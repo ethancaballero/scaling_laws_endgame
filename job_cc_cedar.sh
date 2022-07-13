@@ -12,6 +12,7 @@ dff_div_dmodel="4"
 #iters_per_eval="1"
 iters_per_eval="16"
 train_set_size="1000000000000"
+test_set_size="1000"
 
 n_digit="2"
 
@@ -50,8 +51,12 @@ case $i in
     dff_div_dmodel="${i#*=}"
     shift # past argument=value
     ;;
-    -tss=*|--train_set_size=*)
+    -trss=*|--train_set_size=*)
     train_set_size="${i#*=}"
+    shift # past argument=value
+    ;;
+    -tess=*|--test_set_size=*)
+    test_set_size="${i#*=}"
     shift # past argument=value
     ;;
     -bst=*|--batch_size_train=*)
@@ -108,4 +113,4 @@ source env/bin/activate
 
 cd /home/ethancab/research/scaling_laws_endgame
 
-python minGPT/run_math.py --epochs 1000000000000000000 --data_steps $data_steps --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp False --dmodel $dmodel --batch_size_train $batch_size_train --train_set_size $train_set_size --dff_div_dmodel $dff_div_dmodel --n_head $n_head --n_layer $n_layer --n_digit $n_digit --iters_per_eval $iters_per_eval --seed $seed
+python minGPT/run_math.py --epochs 1000000000000000000 --data_steps $data_steps --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp False --dmodel $dmodel --batch_size_train $batch_size_train --train_set_size $train_set_size --test_set_size $test_set_size --dff_div_dmodel $dff_div_dmodel --n_head $n_head --n_layer $n_layer --n_digit $n_digit --iters_per_eval $iters_per_eval --seed $seed
