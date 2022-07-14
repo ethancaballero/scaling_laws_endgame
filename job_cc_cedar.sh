@@ -2,7 +2,7 @@
 #SBATCH --account=rrg-bengioy-ad         # Yoshua pays for your job
 #SBATCH --cpus-per-task=6                # Ask for 6 CPUs
 #SBATCH --gres=gpu:1                     # Ask for 1 GPU
-#SBATCH --mem=10G                        # Ask for 32 GB of RAM
+#SBATCH --mem=16G                        # Ask for 32 GB of RAM
 #SBATCH --time=3:00:00                   # The job will run for 3 hours
 
 dmodel="128"
