@@ -25,6 +25,8 @@ seed="1"
 
 data_steps="10000000000000000"
 
+only_mlp="False"
+
 user=$USER
 echo "$user"
 
@@ -37,6 +39,10 @@ case $i in
     ;;
     -dm=*|--dmodel=*)
     dmodel="${i#*=}"
+    shift # past argument=value
+    ;;
+    -om=*|--only_mlp=*)
+    only_mlp="${i#*=}"
     shift # past argument=value
     ;;
     -nh=*|--n_head=*)
@@ -113,4 +119,4 @@ source env/bin/activate
 
 cd /home/ethancab/research/scaling_laws_endgame
 
-python minGPT/run_math.py --epochs 1000000000000000000 --data_steps $data_steps --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp False --dmodel $dmodel --batch_size_train $batch_size_train --train_set_size $train_set_size --test_set_size $test_set_size --dff_div_dmodel $dff_div_dmodel --n_head $n_head --n_layer $n_layer --n_digit $n_digit --iters_per_eval $iters_per_eval --seed $seed
+python minGPT/run_math.py --epochs 1000000000000000000 --data_steps $data_steps --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp $only_mlp --dmodel $dmodel --batch_size_train $batch_size_train --train_set_size $train_set_size --test_set_size $test_set_size --dff_div_dmodel $dff_div_dmodel --n_head $n_head --n_layer $n_layer --n_digit $n_digit --iters_per_eval $iters_per_eval --seed $seed
