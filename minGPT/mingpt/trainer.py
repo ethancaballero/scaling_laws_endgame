@@ -133,7 +133,8 @@ class Trainer:
             pbar = tqdm(enumerate(loader), total=len(loader)) if is_train else enumerate(loader)
             for it, (x, y) in pbar:
 
-                if is_train and (it % self.flags.iters_per_eval == 0):
+                #if is_train and (it % self.flags.iters_per_eval == 0):
+                if is_train and (self.train_it % self.flags.iters_per_eval == 0):
                     run_epoch('test')
                 if is_train:
                     self.train_it += 1
@@ -205,6 +206,7 @@ class Trainer:
         for epoch in range(config.max_epochs):
 
             iters = run_epoch('train')
+            """
             if self.test_dataset is not None:
                 test_loss = run_epoch('test')
 
@@ -213,6 +215,7 @@ class Trainer:
             if self.config.ckpt_path is not None and good_model:
                 best_loss = test_loss
                 self.save_checkpoint()
+            #"""
 
             print("data_steps: ", iters * self.flags.batch_size_train)
             print("self.flags.data_steps: ", self.flags.data_steps)
