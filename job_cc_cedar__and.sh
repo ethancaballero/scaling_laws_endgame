@@ -119,26 +119,26 @@ source env/bin/activate
 
 cd /home/ethancab/research/scaling_laws_endgame
 
-s2 = "2"
-s3 = "3"
-s4 = "4"
-s5 = "5"
-s6 = "6"
-s7 = "7"
-s8 = "8"
-s9 = "9"
-s10 = "10"
+s2="2"
+s3="3"
+s4="4"
+s5="5"
+s6="6"
+s7="7"
+s8="8"
+s9="9"
+s10="10"
 
-seed1 = $seed
-seed2 = $(($seed + $s2))
-seed3 = $(($seed + $s3))
-seed4 = $(($seed + $s4))
-seed5 = $(($seed + $s5))
-seed6 = $(($seed + $s6))
-seed7 = $(($seed + $s7))
-seed8 = $(($seed + $s8))
-seed9 = $(($seed + $s9))
-seed10 = $(($seed + $s10))
+seed1=$seed
+seed2=$(($seed + $s2))
+seed3=$(($seed + $s3))
+seed4=$(($seed + $s4))
+seed5=$(($seed + $s5))
+seed6=$(($seed + $s6))
+seed7=$(($seed + $s7))
+seed8=$(($seed + $s8))
+seed9=$(($seed + $s9))
+seed10=$(($seed + $s10))
 
 python minGPT/run_math.py --epochs 1000000000000000000 --data_steps $data_steps --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp $only_mlp --dmodel $dmodel --batch_size_train $batch_size_train --train_set_size $train_set_size --test_set_size $test_set_size --dff_div_dmodel $dff_div_dmodel --n_head $n_head --n_layer $n_layer --n_digit $n_digit --iters_per_eval $iters_per_eval --seed $seed1 &
 python minGPT/run_math.py --epochs 1000000000000000000 --data_steps $data_steps --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp $only_mlp --dmodel $dmodel --batch_size_train $batch_size_train --train_set_size $train_set_size --test_set_size $test_set_size --dff_div_dmodel $dff_div_dmodel --n_head $n_head --n_layer $n_layer --n_digit $n_digit --iters_per_eval $iters_per_eval --seed $seed2 &
