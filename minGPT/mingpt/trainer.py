@@ -176,7 +176,7 @@ class Trainer:
                     # report progress
                     pbar.set_description(f"epoch {epoch+1} iter {it}: train loss {loss.item():.5f}. lr {lr:e}")
 
-                    if self.train_it >= self.flags.data_steps:
+                    if (self.train_it*self.flags.batch_size_train) >= self.flags.data_steps:
                         break
 
             if is_train:
