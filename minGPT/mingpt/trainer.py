@@ -136,6 +136,7 @@ class Trainer:
                 #if is_train and (it % self.flags.iters_per_eval == 0):
                 if is_train and (self.train_it % self.flags.iters_per_eval == 0):
                     run_epoch('test')
+                    model.train(is_train)
                 if is_train:
                     self.train_it += 1
 
