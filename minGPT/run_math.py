@@ -63,7 +63,7 @@ parser.add_argument('--new_perm', type=str2bool, default=True)
 parser.add_argument('--max_dataset_size', type=int, default=100000000)
 parser.add_argument('--n_head', type=int, default=2)
 parser.add_argument('--n_layer', type=int, default=1)
-parser.add_argument('--dropout_prob', type=float, default=.1) #0.0 is no dropout; 1.0 is full dropout
+parser.add_argument('--dropout_prob', type=float, default=0.0) #0.0 is no dropout; 1.0 is full dropout; 0.1 is typical dropout value
 flags = parser.parse_args()
 
 class AdditionDataset(Dataset):
