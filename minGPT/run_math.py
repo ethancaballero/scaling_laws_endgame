@@ -63,6 +63,7 @@ parser.add_argument('--new_perm', type=str2bool, default=True)
 parser.add_argument('--max_dataset_size', type=int, default=100000000)
 parser.add_argument('--n_head', type=int, default=2)
 parser.add_argument('--n_layer', type=int, default=1)
+parser.add_argument('--dropout_prob', type=float, default=.1) #0.0 is no dropout; 1.0 is full dropout
 flags = parser.parse_args()
 
 class AdditionDataset(Dataset):
@@ -173,7 +174,7 @@ if __name__ == '__main__':
     #n_layer = dmodel // dmodel_div_nlayer
     n_layer = flags.n_layer
     
-    print("d_model:", dmodel, "; n_head:", n_head, "; dff:", dff, "; n_layer: ", n_layer)
+    print("d_model:", dmodel, "; n_head:", n_head, "; dff:", dff, "; n_layer: ", n_layer, "dropout_prob: ", flags.dropout_prob)
     #print()
     #print("n_head: ", n_head)
     #print("dff: ", dff)
@@ -193,7 +194,8 @@ if __name__ == '__main__':
 
     # initialize a baby GPT model
     mconf = GPTConfig(flags, train_dataset.vocab_size, train_dataset.block_size, 
-                    n_layer=n_layer, n_head=n_head, n_embd=dmodel, n_ff=dff)
+                    n_layer=n_layer, n_head=n_head, n_embd=dmodel, n_ff=dff,
+                    embd_pdrop=flags.dropout_prob, resid_pdrop=flags.dropout_prob, attn_pdrop=flags.dropout_prob)
                     #n_layer=n_layer, n_head=n_head, n_embd=n_embd)
     model = GPT(mconf)
 
