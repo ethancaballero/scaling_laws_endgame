@@ -1,4 +1,4 @@
-base=437623321
+base=389478048
 hundred=1000
 for i in {1..125}
 do
