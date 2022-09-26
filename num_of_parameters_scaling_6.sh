@@ -2,6 +2,9 @@ base=359642923
 hundred=9000
 for i in {1..43}
 do
+   base_seed=$(($hundred * $i))
+   pre=$(($base + $base_seed))
+   
    size24=1200
    seed24=$(expr $pre + $size24)
    sbatch --time=1:59:59 --gres=gpu:1 --mem=16G job_cc_cedar.sh --dmodel=24 --seed=$seed24 --data_steps=100000000 --train_set_size=100000000000000 --batch_size_train=256 --wandb_tag=math__p_axis__dff_div_dmodel_1__n_head_1__n_digits_4__sweep_e --dff_div_dmodel=1 --iters_per_eval=512 --test_set_size=10000 --n_head=1 --n_digit=4 --lr=.001
