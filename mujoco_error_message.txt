@@ -1,0 +1,160 @@
+running build_ext
+building 'mujoco_py.cymj' extension
+creating /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_39_linuxcpuextensionbuilder
+creating /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_39_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-39
+creating /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_39_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-39/home
+creating /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_39_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-39/home/mila
+creating /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_39_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-39/home/mila/c
+creating /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_39_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-39/home/mila/c/caballero
+creating /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_39_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-39/home/mila/c/caballero/.conda
+creating /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_39_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-39/home/mila/c/caballero/.conda/envs
+creating /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_39_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-39/home/mila/c/caballero/.conda/envs/py39
+creating /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_39_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-39/home/mila/c/caballero/.conda/envs/py39/lib
+creating /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_39_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-39/home/mila/c/caballero/.conda/envs/py39/lib/python3.9
+creating /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_39_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-39/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages
+creating /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_39_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-39/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py
+creating /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_39_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-39/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/gl
+gcc -pthread -B /home/mila/c/caballero/.conda/envs/py39/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/mila/c/caballero/.conda/envs/py39/include -I/home/mila/c/caballero/.conda/envs/py39/include -fPIC -O2 -isystem /home/mila/c/caballero/.conda/envs/py39/include -fPIC -I.conda/envs/py39/lib/python3.9/site-packages/mujoco_py -I/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py -I/cvmfs/ai.mila.quebec/apps/x86_64/common/mujoco/2.0/include -I/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/numpy/core/include -I/home/mila/c/caballero/.conda/envs/py39/include/python3.9 -c /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c -o /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/generated/_pyxbld_2.1.2.14_39_linuxcpuextensionbuilder/temp.linux-x86_64-cpython-39/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.o -fopenmp -w
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c: In function ‘__pyx_f_9mujoco_py_4cymj_9PyMjModel__set’:
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:31875:80: error: ‘mjModel {aka struct _mjModel}’ has no member named ‘key_mpos’; did you mean ‘key_qpos’?
+   __pyx_t_1 = ((PyObject *)__pyx_f_9mujoco_py_4cymj__wrap_mjtNum_2d(__pyx_v_p->key_mpos, __pyx_v_p->nkey, (3 * __pyx_v_p->nmocap))); if (unlikely(!__pyx_t_1)) __PYX_ERR(4, 1494, __pyx_L1_error)
+                                                                                ^~~~~~~~
+                                                                                key_qpos
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:31890:80: error: ‘mjModel {aka struct _mjModel}’ has no member named ‘key_mquat’; did you mean ‘body_quat’?
+   __pyx_t_1 = ((PyObject *)__pyx_f_9mujoco_py_4cymj__wrap_mjtNum_2d(__pyx_v_p->key_mquat, __pyx_v_p->nkey, (4 * __pyx_v_p->nmocap))); if (unlikely(!__pyx_t_1)) __PYX_ERR(4, 1495, __pyx_L1_error)
+                                                                                ^~~~~~~~~
+                                                                                body_quat
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c: In function ‘__pyx_pf_9mujoco_py_4cymj_12PyMjvPerturb_7active2___get__’:
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:69927:55: error: ‘mjvPerturb {aka struct _mjvPerturb}’ has no member named ‘active2’; did you mean ‘active’?
+   __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->ptr->active2); if (unlikely(!__pyx_t_1)) __PYX_ERR(4, 3352, __pyx_L1_error)
+                                                       ^~~~~~~
+                                                       active
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c: In function ‘__pyx_pf_9mujoco_py_4cymj_12PyMjvPerturb_7active2_2__set__’:
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:69982:22: error: ‘mjvPerturb {aka struct _mjvPerturb}’ has no member named ‘active2’; did you mean ‘active’?
+   __pyx_v_self->ptr->active2 = __pyx_v_x;
+                      ^~~~~~~
+                      active
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c: In function ‘__pyx_f_9mujoco_py_4cymj_10PyMjvScene__set’:
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:76537:82: error: ‘mjvScene {aka struct _mjvScene}’ has no member named ‘framergb’; did you mean ‘camera’?
+   __pyx_t_1 = ((PyObject *)__pyx_f_9mujoco_py_4cymj__wrap_float_1d((&(__pyx_v_p->framergb[0])), 3)); if (unlikely(!__pyx_t_1)) __PYX_ERR(4, 3743, __pyx_L1_error)
+                                                                                  ^~~~~~~~
+                                                                                  camera
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c: In function ‘__pyx_pf_9mujoco_py_4cymj_10PyMjvScene_10framewidth___get__’:
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:77244:53: error: ‘mjvScene {aka struct _mjvScene}’ has no member named ‘framewidth’
+   __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->ptr->framewidth); if (unlikely(!__pyx_t_1)) __PYX_ERR(4, 3774, __pyx_L1_error)
+                                                     ^~
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c: In function ‘__pyx_pf_9mujoco_py_4cymj_10PyMjvScene_10framewidth_2__set__’:
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:77299:20: error: ‘mjvScene {aka struct _mjvScene}’ has no member named ‘framewidth’
+   __pyx_v_self->ptr->framewidth = __pyx_v_x;
+                    ^~
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c: In function ‘__pyx_pf_9mujoco_py_4cymj_11PyMjvFigure_9linewidth___get__’:
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:78679:34: error: incompatible type for argument 1 of ‘PyFloat_FromDouble’
+   __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->ptr->linewidth); if (unlikely(!__pyx_t_1)) __PYX_ERR(4, 3878, __pyx_L1_error)
+                                  ^~~~~~~~~~~~
+In file included from /home/mila/c/caballero/.conda/envs/py39/include/python3.9/Python.h:97:0,
+                 from /home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:63:
+/home/mila/c/caballero/.conda/envs/py39/include/python3.9/floatobject.h:45:24: note: expected ‘double’ but argument is of type ‘float *’
+ PyAPI_FUNC(PyObject *) PyFloat_FromDouble(double);
+                        ^~~~~~~~~~~~~~~~~~
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c: In function ‘__pyx_pf_9mujoco_py_4cymj_11PyMjvFigure_9linewidth_2__set__’:
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:78734:32: error: assignment to expression with array type
+   __pyx_v_self->ptr->linewidth = __pyx_v_x;
+                                ^
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c: In function ‘__pyx_pf_9mujoco_py_4cymj_11PyMjvFigure_12legendoffset___get__’:
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:78865:55: error: ‘mjvFigure {aka struct _mjvFigure}’ has no member named ‘legendoffset’; did you mean ‘legendoff’?
+   __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->ptr->legendoffset); if (unlikely(!__pyx_t_1)) __PYX_ERR(4, 3886, __pyx_L1_error)
+                                                       ^~~~~~~~~~~~
+                                                       legendoff
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c: In function ‘__pyx_pf_9mujoco_py_4cymj_11PyMjvFigure_12legendoffset_2__set__’:
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:78920:22: error: ‘mjvFigure {aka struct _mjvFigure}’ has no member named ‘legendoffset’; did you mean ‘legendoff’?
+   __pyx_v_self->ptr->legendoffset = __pyx_v_x;
+                      ^~~~~~~~~~~~
+                      legendoff
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c: In function ‘__pyx_pf_9mujoco_py_4cymj_11PyMjvFigure_7subplot___get__’:
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:78958:53: error: ‘mjvFigure {aka struct _mjvFigure}’ has no member named ‘subplot’
+   __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->ptr->subplot); if (unlikely(!__pyx_t_1)) __PYX_ERR(4, 3890, __pyx_L1_error)
+                                                     ^~
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c: In function ‘__pyx_pf_9mujoco_py_4cymj_11PyMjvFigure_7subplot_2__set__’:
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:79013:20: error: ‘mjvFigure {aka struct _mjvFigure}’ has no member named ‘subplot’
+   __pyx_v_self->ptr->subplot = __pyx_v_x;
+                    ^~
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c: In function ‘__pyx_pf_9mujoco_py_4cymj_11PyMjvFigure_11highlightid___get__’:
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:79051:55: error: ‘mjvFigure {aka struct _mjvFigure}’ has no member named ‘highlightid’; did you mean ‘highlight’?
+   __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->ptr->highlightid); if (unlikely(!__pyx_t_1)) __PYX_ERR(4, 3894, __pyx_L1_error)
+                                                       ^~~~~~~~~~~
+                                                       highlight
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c: In function ‘__pyx_pf_9mujoco_py_4cymj_11PyMjvFigure_11highlightid_2__set__’:
+/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/cymj.c:79106:22: error: ‘mjvFigure {aka struct _mjvFigure}’ has no member named ‘highlightid’; did you mean ‘highlight’?
+   __pyx_v_self->ptr->highlightid = __pyx_v_x;
+                      ^~~~~~~~~~~
+                      highlight
+Traceback (most recent call last):
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/setuptools/_distutils/unixccompiler.py", line 186, in _compile
+    self.spawn(compiler_so + cc_args + [src, '-o', obj] + extra_postargs)
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/setuptools/_distutils/ccompiler.py", line 987, in spawn
+    spawn(cmd, dry_run=self.dry_run, **kwargs)
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/setuptools/_distutils/spawn.py", line 70, in spawn
+    raise DistutilsExecError(
+distutils.errors.DistutilsExecError: command '/cvmfs/ai.mila.quebec/apps/arch/distro/gcc/7.4.0/bin/gcc' failed with exit code 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/gym/envs/registration.py", line 581, in make
+    env_creator = load(spec_.entry_point)
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/gym/envs/registration.py", line 61, in load
+    mod = importlib.import_module(mod_name)
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/gym/envs/mujoco/__init__.py", line 1, in <module>
+    from gym.envs.mujoco.mujoco_env import MujocoEnv, MuJocoPyEnv  # isort:skip
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/gym/envs/mujoco/mujoco_env.py", line 11, in <module>
+    import mujoco_py
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/__init__.py", line 2, in <module>
+    from mujoco_py.builder import cymj, ignore_mujoco_warnings, functions, MujocoException
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/builder.py", line 504, in <module>
+    cymj = load_cython_ext(mujoco_path)
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/builder.py", line 110, in load_cython_ext
+    cext_so_path = builder.build()
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/builder.py", line 226, in build
+    built_so_file_path = self._build_impl()
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/builder.py", line 278, in _build_impl
+    so_file_path = super()._build_impl()
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/builder.py", line 249, in _build_impl
+    dist.run_commands()
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 973, in run_commands
+    self.run_command(cmd)
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/setuptools/dist.py", line 1217, in run_command
+    super().run_command(command)
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 992, in run_command
+    cmd_obj.run()
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/Cython/Distutils/old_build_ext.py", line 186, in run
+    _build_ext.build_ext.run(self)
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/setuptools/_distutils/command/build_ext.py", line 346, in run
+    self.build_extensions()
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/mujoco_py/builder.py", line 149, in build_extensions
+    build_ext.build_extensions(self)
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/Cython/Distutils/old_build_ext.py", line 195, in build_extensions
+    _build_ext.build_ext.build_extensions(self)
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/setuptools/_distutils/command/build_ext.py", line 466, in build_extensions
+    self._build_extensions_serial()
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/setuptools/_distutils/command/build_ext.py", line 492, in _build_extensions_serial
+    self.build_extension(ext)
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/setuptools/_distutils/command/build_ext.py", line 547, in build_extension
+    objects = self.compiler.compile(
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/setuptools/_distutils/ccompiler.py", line 599, in compile
+    self._compile(obj, src, ext, cc_args, extra_postargs, pp_opts)
+  File "/home/mila/c/caballero/.conda/envs/py39/lib/python3.9/site-packages/setuptools/_distutils/unixccompiler.py", line 188, in _compile
+    raise CompileError(msg)
+distutils.errors.CompileError: command '/cvmfs/ai.mila.quebec/apps/arch/distro/gcc/7.4.0/bin/gcc' failed with exit code 1
