@@ -19,6 +19,7 @@ n_digit="2"
 lr=".001"
 
 dropout_prob="0.0"
+weight_decay="0.1"
 
 #wandb_tag="math__p_axis__dff_div_dmodel_1__n_head_1__n_digits_4"
 wandb_tag="math__d_axis__seeds_2"
@@ -95,6 +96,10 @@ case $i in
     dropout_prob="${i#*=}"
     shift # past argument=value
     ;;
+    -wd=*|--weight_decay=*)
+    weight_decay="${i#*=}"
+    shift # past argument=value
+    ;;
     *)
           # unknown option
     ;;
@@ -146,6 +151,6 @@ seed8=$(($seed + $s8))
 seed9=$(($seed + $s9))
 seed10=$(($seed + $s10))
 
-python minGPT/run_math.py --epochs 1000000000000000000 --data_steps $data_steps --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp $only_mlp --dmodel $dmodel --batch_size_train $batch_size_train --train_set_size $train_set_size --test_set_size $test_set_size --dff_div_dmodel $dff_div_dmodel --n_head $n_head --n_layer $n_layer --n_digit $n_digit --iters_per_eval $iters_per_eval --dropout_prob $dropout_prob --seed $seed1 &
-python minGPT/run_math.py --epochs 1000000000000000000 --data_steps $data_steps --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp $only_mlp --dmodel $dmodel --batch_size_train $batch_size_train --train_set_size $train_set_size --test_set_size $test_set_size --dff_div_dmodel $dff_div_dmodel --n_head $n_head --n_layer $n_layer --n_digit $n_digit --iters_per_eval $iters_per_eval --dropout_prob $dropout_prob --seed $seed2 &
+python minGPT/run_math.py --epochs 1000000000000000000 --data_steps $data_steps --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp $only_mlp --dmodel $dmodel --batch_size_train $batch_size_train --train_set_size $train_set_size --test_set_size $test_set_size --dff_div_dmodel $dff_div_dmodel --n_head $n_head --n_layer $n_layer --n_digit $n_digit --iters_per_eval $iters_per_eval --dropout_prob $dropout_prob --weight_decay $weight_decay --seed $seed1 &
+python minGPT/run_math.py --epochs 1000000000000000000 --data_steps $data_steps --lr $lr --lr_decay False --drop_last True --wandb_tag $wandb_tag --only_mlp $only_mlp --dmodel $dmodel --batch_size_train $batch_size_train --train_set_size $train_set_size --test_set_size $test_set_size --dff_div_dmodel $dff_div_dmodel --n_head $n_head --n_layer $n_layer --n_digit $n_digit --iters_per_eval $iters_per_eval --dropout_prob $dropout_prob --weight_decay $weight_decay --seed $seed2 &
 wait
